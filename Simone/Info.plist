@@ -36,7 +36,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Beatles Light Light</string>
+		<string>Beatles Light Light.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
