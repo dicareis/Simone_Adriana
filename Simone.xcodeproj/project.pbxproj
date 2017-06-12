@@ -12,6 +12,8 @@
 		9BEF1F761EEF08430032793E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F741EEF08430032793E /* Main.storyboard */; };
 		9BEF1F781EEF08430032793E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F771EEF08430032793E /* Assets.xcassets */; };
 		9BEF1F7B1EEF08430032793E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F791EEF08430032793E /* LaunchScreen.storyboard */; };
+		9BEF1F851EEF09D10032793E /* images in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F831EEF09D10032793E /* images */; };
+		9BEF1F861EEF09D10032793E /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F841EEF09D10032793E /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9BEF1F771EEF08430032793E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BEF1F7A1EEF08430032793E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BEF1F7C1EEF08430032793E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BEF1F831EEF09D10032793E /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		9BEF1F841EEF09D10032793E /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		9BEF1F6F1EEF08430032793E /* Simone */ = {
 			isa = PBXGroup;
 			children = (
-				9BEF1F701EEF08430032793E /* AppDelegate.swift */,
+				9BEF1F831EEF09D10032793E /* images */,
+				9BEF1F841EEF09D10032793E /* fonts */,
+				9BEF1F821EEF087A0032793E /* Assets */,
 				9BEF1F721EEF08430032793E /* ViewController.swift */,
 				9BEF1F741EEF08430032793E /* Main.storyboard */,
+			);
+			path = Simone;
+			sourceTree = "<group>";
+		};
+		9BEF1F821EEF087A0032793E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9BEF1F701EEF08430032793E /* AppDelegate.swift */,
 				9BEF1F771EEF08430032793E /* Assets.xcassets */,
 				9BEF1F791EEF08430032793E /* LaunchScreen.storyboard */,
 				9BEF1F7C1EEF08430032793E /* Info.plist */,
 			);
-			path = Simone;
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BEF1F851EEF09D10032793E /* images in Resources */,
+				9BEF1F861EEF09D10032793E /* fonts in Resources */,
 				9BEF1F7B1EEF08430032793E /* LaunchScreen.storyboard in Resources */,
 				9BEF1F781EEF08430032793E /* Assets.xcassets in Resources */,
 				9BEF1F761EEF08430032793E /* Main.storyboard in Resources */,
@@ -299,6 +315,7 @@
 				9BEF1F811EEF08430032793E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
