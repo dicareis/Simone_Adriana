@@ -7,25 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B9F7A0D1EF3169C00CECEB4 /* high.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A061EF3169C00CECEB4 /* high.png */; };
+		9B9F7A0E1EF3169C00CECEB4 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A071EF3169C00CECEB4 /* new.png */; };
+		9B9F7A0F1EF3169C00CECEB4 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A081EF3169C00CECEB4 /* play.png */; };
+		9B9F7A101EF3169C00CECEB4 /* simone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A091EF3169C00CECEB4 /* simone.png */; };
+		9B9F7A111EF3169C00CECEB4 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A0A1EF3169C00CECEB4 /* bar.png */; };
+		9B9F7A121EF3169C00CECEB4 /* b2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A0B1EF3169C00CECEB4 /* b2.png */; };
+		9B9F7A131EF3169C00CECEB4 /* b8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A0C1EF3169C00CECEB4 /* b8.png */; };
+		9B9F7A151EF316C100CECEB4 /* Beatles Light Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */; };
+		9BDF32F81F0AB85E0079C9BE /* icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF32F61F0AB85E0079C9BE /* icon_120.png */; };
+		9BDF32F91F0AB85E0079C9BE /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF32F71F0AB85E0079C9BE /* ring.png */; };
+		9BDF32FB1F0AC13D0079C9BE /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32FA1F0AC13D0079C9BE /* GameController.swift */; };
+		9BDF32FD1F0AC1A50079C9BE /* WrongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32FC1F0AC1A50079C9BE /* WrongController.swift */; };
+		9BDF32FF1F0AC28F0079C9BE /* SimoneBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32FE1F0AC28F0079C9BE /* SimoneBrain.swift */; };
+		9BDF33011F0AC3140079C9BE /* SingletonShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF33001F0AC3140079C9BE /* SingletonShared.swift */; };
+		9BDF33031F0AD1CF0079C9BE /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF33021F0AD1CF0079C9BE /* reset.png */; };
 		9BEF1F711EEF08430032793E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF1F701EEF08430032793E /* AppDelegate.swift */; };
-		9BEF1F731EEF08430032793E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF1F721EEF08430032793E /* ViewController.swift */; };
+		9BEF1F731EEF08430032793E /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF1F721EEF08430032793E /* StartController.swift */; };
 		9BEF1F761EEF08430032793E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F741EEF08430032793E /* Main.storyboard */; };
 		9BEF1F781EEF08430032793E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F771EEF08430032793E /* Assets.xcassets */; };
 		9BEF1F7B1EEF08430032793E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F791EEF08430032793E /* LaunchScreen.storyboard */; };
-		9BEF1F851EEF09D10032793E /* images in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F831EEF09D10032793E /* images */; };
-		9BEF1F861EEF09D10032793E /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1F841EEF09D10032793E /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B9F7A061EF3169C00CECEB4 /* high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = high.png; sourceTree = "<group>"; };
+		9B9F7A071EF3169C00CECEB4 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		9B9F7A081EF3169C00CECEB4 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		9B9F7A091EF3169C00CECEB4 /* simone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simone.png; sourceTree = "<group>"; };
+		9B9F7A0A1EF3169C00CECEB4 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		9B9F7A0B1EF3169C00CECEB4 /* b2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b2.png; sourceTree = "<group>"; };
+		9B9F7A0C1EF3169C00CECEB4 /* b8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b8.png; sourceTree = "<group>"; };
+		9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beatles Light Light.ttf"; sourceTree = "<group>"; };
+		9BDF32F61F0AB85E0079C9BE /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_120.png; sourceTree = "<group>"; };
+		9BDF32F71F0AB85E0079C9BE /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		9BDF32FA1F0AC13D0079C9BE /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		9BDF32FC1F0AC1A50079C9BE /* WrongController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrongController.swift; sourceTree = "<group>"; };
+		9BDF32FE1F0AC28F0079C9BE /* SimoneBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimoneBrain.swift; sourceTree = "<group>"; };
+		9BDF33001F0AC3140079C9BE /* SingletonShared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonShared.swift; sourceTree = "<group>"; };
+		9BDF33021F0AD1CF0079C9BE /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
 		9BEF1F6D1EEF08430032793E /* Simone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEF1F701EEF08430032793E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BEF1F721EEF08430032793E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BEF1F721EEF08430032793E /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		9BEF1F751EEF08430032793E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BEF1F771EEF08430032793E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BEF1F7A1EEF08430032793E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BEF1F7C1EEF08430032793E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BEF1F831EEF09D10032793E /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
-		9BEF1F841EEF09D10032793E /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +84,24 @@
 		9BEF1F6F1EEF08430032793E /* Simone */ = {
 			isa = PBXGroup;
 			children = (
-				9BEF1F831EEF09D10032793E /* images */,
-				9BEF1F841EEF09D10032793E /* fonts */,
+				9BDF32F61F0AB85E0079C9BE /* icon_120.png */,
+				9BDF32F71F0AB85E0079C9BE /* ring.png */,
+				9B9F7A061EF3169C00CECEB4 /* high.png */,
+				9B9F7A071EF3169C00CECEB4 /* new.png */,
+				9B9F7A081EF3169C00CECEB4 /* play.png */,
+				9BDF33021F0AD1CF0079C9BE /* reset.png */,
+				9B9F7A091EF3169C00CECEB4 /* simone.png */,
+				9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */,
+				9B9F7A0A1EF3169C00CECEB4 /* bar.png */,
+				9B9F7A0B1EF3169C00CECEB4 /* b2.png */,
+				9B9F7A0C1EF3169C00CECEB4 /* b8.png */,
 				9BEF1F821EEF087A0032793E /* Assets */,
-				9BEF1F721EEF08430032793E /* ViewController.swift */,
+				9BEF1F721EEF08430032793E /* StartController.swift */,
+				9BDF33001F0AC3140079C9BE /* SingletonShared.swift */,
 				9BEF1F741EEF08430032793E /* Main.storyboard */,
+				9BDF32FC1F0AC1A50079C9BE /* WrongController.swift */,
+				9BDF32FE1F0AC28F0079C9BE /* SimoneBrain.swift */,
+				9BDF32FA1F0AC13D0079C9BE /* GameController.swift */,
 			);
 			path = Simone;
 			sourceTree = "<group>";
@@ -137,11 +176,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEF1F851EEF09D10032793E /* images in Resources */,
-				9BEF1F861EEF09D10032793E /* fonts in Resources */,
+				9B9F7A0E1EF3169C00CECEB4 /* new.png in Resources */,
+				9B9F7A151EF316C100CECEB4 /* Beatles Light Light.ttf in Resources */,
 				9BEF1F7B1EEF08430032793E /* LaunchScreen.storyboard in Resources */,
 				9BEF1F781EEF08430032793E /* Assets.xcassets in Resources */,
+				9B9F7A0F1EF3169C00CECEB4 /* play.png in Resources */,
+				9B9F7A101EF3169C00CECEB4 /* simone.png in Resources */,
 				9BEF1F761EEF08430032793E /* Main.storyboard in Resources */,
+				9BDF33031F0AD1CF0079C9BE /* reset.png in Resources */,
+				9B9F7A131EF3169C00CECEB4 /* b8.png in Resources */,
+				9B9F7A0D1EF3169C00CECEB4 /* high.png in Resources */,
+				9B9F7A121EF3169C00CECEB4 /* b2.png in Resources */,
+				9BDF32F91F0AB85E0079C9BE /* ring.png in Resources */,
+				9BDF32F81F0AB85E0079C9BE /* icon_120.png in Resources */,
+				9B9F7A111EF3169C00CECEB4 /* bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEF1F731EEF08430032793E /* ViewController.swift in Sources */,
+				9BDF33011F0AC3140079C9BE /* SingletonShared.swift in Sources */,
+				9BDF32FF1F0AC28F0079C9BE /* SimoneBrain.swift in Sources */,
+				9BEF1F731EEF08430032793E /* StartController.swift in Sources */,
+				9BDF32FD1F0AC1A50079C9BE /* WrongController.swift in Sources */,
+				9BDF32FB1F0AC13D0079C9BE /* GameController.swift in Sources */,
 				9BEF1F711EEF08430032793E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
