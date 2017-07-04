@@ -22,34 +22,40 @@ class GameController: UIViewController {
     @IBOutlet weak var but9: UIButton!
     @IBOutlet weak var scoreKeeper: UILabel!
     //------------
-    var arrOfButtons: [UIButton]!
-    var arrOfRandomButtons: [UIButton] = []
-    //------------
-    let simoneBrain = SimoneBrain()
+    var arrOfGameColors: [UIButton]!
+    var simoneBrain : SimoneBrain!
     
     //---------------------------------
     override func viewDidLoad() {
         //------------
         super.viewDidLoad()
         //------------
-        arrOfButtons = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
+        arrOfGameColors = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
+        simoneBrain = SimoneBrain(gameColors: arrOfGameColors)
         //------------
-        addRandomButtonToArray()
-        //------------Appelle la méthode "start game"
-        simoneBrain.startGame(arrOfRandomButtons)
-        //------------ Initialise "scoreKeeper"
-        scoreKeeper.text = simoneBrain.scoreKeeper
-        //------------
+//        addRandomButtonToArray()
+//        //------------Appelle la méthode "start game"
+//        simoneBrain.startGame(arrOfRandomButtons)
+//        //------------ Initialise "scoreKeeper"
+//        scoreKeeper.text = simoneBrain.scoreKeeper
+//        //------------
     }
     //---------------------------------
+
     
-    func addRandomButtonToArray (){
-        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count-1)
-        arrOfRandomButtons.append(arrOfButtons[randomIndex])
-        
-     
+//
+//    func addRandomButtonToArray (){
+//        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfGameColors.count-1)
+//        arrOfRandomButtons.append(arrOfGameColors[randomIndex])
+//        
+//     
+//    
+//    }
+
     
-    }
+    
+    
+    
     
      //---------------------------------
     override func didReceiveMemoryWarning() {

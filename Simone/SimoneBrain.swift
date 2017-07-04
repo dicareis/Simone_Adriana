@@ -11,11 +11,22 @@ import UIKit
 //=============================================
 class SimoneBrain{
     //---------------------------------
-    var colorTracker: Int!
+    
+    var gameColors : [UIButton]!
+    var colorIndex: Int!
+    var arrRandomColors: [UIButton] = []
     var userTurnToPlay: Bool!
+    var scoreTracker = ""
+    var colorToHighlight: UIButton!
+    var arrCopyOfRandomColorsToCompare: [UIButton]!
     var scoreKeeperCounter: Int!
-    var theScoreKeeper = ""
-    var randomButtonChooser: UIButton!
+    
+    //---------------------------------Constructeur
+    init(gameColors: [UIButton]) {
+        self.gameColors = gameColors
+    }
+    
+    //---------------------------------
 
     func getRandomNumber (from f: Int, to t: Int) -> Int {
         
@@ -29,29 +40,29 @@ class SimoneBrain{
     //---------------------------------
     func startGame (_ arrOfRandomButtons: [UIButton]){
         //------------
-        colorTracker = 0
+        colorIndex = 0
         //------------ Timer 1 seconde pour exécuter le methode "buttonAlphaManager"
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false){ _ in
-            self.buttonAlphaManager(arrOfRandomButtons)
+            self.gameColorsToHighlightManager()
         }
         //------------
     
     }
     
     //---------------------------------
-    func buttonAlphaManager (_ arrOfRandomButtons: [UIButton]){
+    func gameColorsToHighlightManager(){
         
-        if colorTracker < arrOfRandomButtons.count{
+        if colorIndex < arrRandomColors.count{
             //------------
             userTurnToPlay = false
-            scoreKeeperCounter = 0
             scoreKeeper = ""
-            randomButtonChooser = arrOfRandomButtons[colorTracker]
-            randomButtonChooser.alpha = 0.2
-            colorTracker! += 1
+            colorToHighlight = arrRandomColors[colorIndex]
+            colorToHighlight.alpha = 0.2
+            colorIndex! += 1
+            scoreKeeperCounter = 0
             //------------
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){ _ in
-                self.resetAlphaForButtons(arrOfRandomButtons)
+                self.resetAlphaForColors()
             }
             //------------
         } else {
@@ -62,12 +73,12 @@ class SimoneBrain{
     }
     
     //---------------------------------
-    func resetAlphaForButtons (_ arrOfRandomButtons: [UIButton]){
+    func resetAlphaForColors (){
         //------------
-        randomButtonChooser.alpha = 1.0
+        colorToHighlight.alpha = 1.0
         //------------
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){ _ in
-            self.buttonAlphaManager(arrOfRandomButtons)
+            self.gameColorsToHighlightManager()
         }
         //------------
     }
@@ -76,18 +87,89 @@ class SimoneBrain{
     var scoreKeeper: String?{
         
         get{
-            return theScoreKeeper
+            return scoreTracker
         }
         set {
-            theScoreKeeper = newValue!
+            scoreTracker = newValue!
         }
-        
-    
-    
     }
     
+    //---------------------------------
+    func verification (_ aButton: UIButton) -> Bool{
+        if arrCopyOfRandomColorsToCompare[0] == aButton{
+            arrCopyOfRandomColorsToCompare.removeFirst()
+            
+            if arrCopyOfRandomColorsToCompare.count == 0 {
+                colorIndex = 0
+                addRandomColorToArray()
+                Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false){ _ in
+                    self.gameColorsToHighlightManager()
+                }
+            }
+            return true
+        } else {
+            return false
+        }
+        
+    }
+    
+    //---------------------------------
+    func addRandomColorToArray() {
+        let randomIndex = getRandomNumber(from: 0, to: gameColors.count - 1)
+        arrRandomColors.append(gameColors[randomIndex])
+    }
     
     //---------------------------------
     
+    func loadArrayForComparison (){
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // VIDEO 5   EU PAREI NO SEGUINTE TEMPO:   22:24h
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    //---------------------------------
+
+
+    
 }//fin class SimoneBrain
 //=============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
