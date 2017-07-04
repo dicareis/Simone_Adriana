@@ -35,6 +35,10 @@ class GameController: UIViewController {
         arrOfButtons = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
         //------------
         addRandomButtonToArray()
+        //------------Appelle la méthode "start game"
+        simoneBrain.startGame(arrOfRandomButtons)
+        //------------ Initialise "scoreKeeper"
+        scoreKeeper.text = simoneBrain.scoreKeeper
         //------------
     }
     //---------------------------------
