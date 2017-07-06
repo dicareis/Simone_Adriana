@@ -245,7 +245,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJr-NE-9pz">
-                                        <rect key="frame" x="167" y="453" width="81" height="56"/>
+                                        <rect key="frame" x="167" y="453.33333333333337" width="81" height="56"/>
                                         <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="50"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -382,6 +382,9 @@
                                                             <constraint firstAttribute="height" constant="48" id="to2-Jt-ApR"/>
                                                         </constraints>
                                                         <state key="normal" image="new.png"/>
+                                                        <connections>
+                                                            <segue destination="xMd-DO-mk5" kind="presentation" id="g3I-a9-nLC"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDu-1b-sze">
                                                         <rect key="frame" x="0.0" y="105" width="204" height="48"/>
@@ -415,6 +418,9 @@
                             <constraint firstItem="XDG-ha-DUE" firstAttribute="centerX" secondItem="sgY-ae-hQy" secondAttribute="centerX" id="iF6-Rl-qpv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="rnx-Pc-e8I" id="o44-6W-prE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wh-qT-QqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -425,11 +431,14 @@
         <image name="b2.png" width="300" height="300"/>
         <image name="b8.png" width="300" height="300"/>
         <image name="bar.png" width="2054" height="471"/>
-        <image name="high.png" width="804" height="181"/>
-        <image name="new.png" width="804" height="182"/>
+        <image name="high.png" width="805" height="182"/>
+        <image name="new.png" width="805" height="181"/>
         <image name="play.png" width="805" height="182"/>
         <image name="reset.png" width="805" height="182"/>
         <image name="ring.png" width="267" height="267"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="g3I-a9-nLC"/>
+    </inferredMetricsTieBreakers>
 </document>

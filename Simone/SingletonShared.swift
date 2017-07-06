@@ -12,11 +12,42 @@ import UIKit
 //=============================================
 class SingletonShared{
     //---------------------------------
-    var highscore = "0"
+    var highscore : String!
+    var scoreForWrongInterface: String!
+    var savedHighscore = UserDefaults.standard
+    static let singletonSharedInstance = SingletonShared()
+    
+    //---------------------------------
+    init() {
+        saveDefaultIfNeeded()
+    }
+    
+    //---------------------------------
+    func saveDefaultIfNeeded() {
+        if savedHighscore.object(forKey: "score") == nil{
+            savedHighscore.setValue("0", forKey: "score")
+        }
+    }
+    //---------------------------------
+    func saveScore(_ aScore: String) {
+        let a = Int(aScore)
+        let b = savedHighscore.object(forKey: "score") as? String
+        let c = Int (b!)
+        if a! > c! {
+            savedHighscore.setValue(aScore, forKey: "score")
+        }
+    }
+
+    
+    //---------------------------------
+    func resetHighscore() {
+        savedHighscore.removeObject(forKey: "score")
+        saveDefaultIfNeeded()
+    }
+
     //---------------------------------
 
-    static let singletonSharedInstance = SingletonShared()
-    //---------------------------------
+    
     
 }//fin class SingletonShared
 //=============================================

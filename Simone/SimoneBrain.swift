@@ -132,13 +132,6 @@ class SimoneBrain{
         
         
         
-        // VIDEO 5   EU PAREI NO SEGUINTE TEMPO:   22:24h
-        
-        
-        
-        
-        
-        
         
         
         
