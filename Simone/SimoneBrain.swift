@@ -38,7 +38,7 @@ class SimoneBrain{
     }
     
     //---------------------------------
-    func startGame (_ arrOfRandomButtons: [UIButton]){
+    func startGame (){
         //------------
         colorIndex = 0
         //------------ Timer 1 seconde pour exécuter le methode "buttonAlphaManager"
@@ -123,7 +123,7 @@ class SimoneBrain{
     
     func loadArrayForComparison (){
         
-        
+        arrCopyOfRandomColorsToCompare = arrRandomColors
         
         
         

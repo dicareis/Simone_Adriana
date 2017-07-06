@@ -32,7 +32,6 @@
 		9B9F7A121EF3169C00CECEB4 /* b2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A0B1EF3169C00CECEB4 /* b2.png */; };
 		9B9F7A131EF3169C00CECEB4 /* b8.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A0C1EF3169C00CECEB4 /* b8.png */; };
 		9B9F7A151EF316C100CECEB4 /* Beatles Light Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */; };
-		9BDF32F81F0AB85E0079C9BE /* icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF32F61F0AB85E0079C9BE /* icon_120.png */; };
 		9BDF32F91F0AB85E0079C9BE /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BDF32F71F0AB85E0079C9BE /* ring.png */; };
 		9BDF32FB1F0AC13D0079C9BE /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32FA1F0AC13D0079C9BE /* GameController.swift */; };
 		9BDF32FD1F0AC1A50079C9BE /* WrongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDF32FC1F0AC1A50079C9BE /* WrongController.swift */; };
@@ -72,7 +71,6 @@
 		9B9F7A0B1EF3169C00CECEB4 /* b2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b2.png; sourceTree = "<group>"; };
 		9B9F7A0C1EF3169C00CECEB4 /* b8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b8.png; sourceTree = "<group>"; };
 		9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beatles Light Light.ttf"; sourceTree = "<group>"; };
-		9BDF32F61F0AB85E0079C9BE /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_120.png; sourceTree = "<group>"; };
 		9BDF32F71F0AB85E0079C9BE /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
 		9BDF32FA1F0AC13D0079C9BE /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9BDF32FC1F0AC1A50079C9BE /* WrongController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrongController.swift; sourceTree = "<group>"; };
@@ -102,6 +100,24 @@
 		9BDF33041F0AE2DD0079C9BE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9BE8108E1F0EC0AB001A6156 /* icons */,
+				9BDF32F71F0AB85E0079C9BE /* ring.png */,
+				9B9F7A061EF3169C00CECEB4 /* high.png */,
+				9B9F7A071EF3169C00CECEB4 /* new.png */,
+				9B9F7A081EF3169C00CECEB4 /* play.png */,
+				9BDF33021F0AD1CF0079C9BE /* reset.png */,
+				9B9F7A091EF3169C00CECEB4 /* simone.png */,
+				9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */,
+				9B9F7A0A1EF3169C00CECEB4 /* bar.png */,
+				9B9F7A0B1EF3169C00CECEB4 /* b2.png */,
+				9B9F7A0C1EF3169C00CECEB4 /* b8.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9BE8108E1F0EC0AB001A6156 /* icons */ = {
+			isa = PBXGroup;
+			children = (
 				9B89C6951F0C2B4000C4D39E /* 20.png */,
 				9B89C6961F0C2B4000C4D39E /* 29.png */,
 				9B89C6971F0C2B4000C4D39E /* 40.png */,
@@ -119,19 +135,8 @@
 				9B89C6A31F0C2B4000C4D39E /* 180.png */,
 				9B89C6A41F0C2B4000C4D39E /* 196.png */,
 				9B89C6A51F0C2B4000C4D39E /* 1024.png */,
-				9BDF32F61F0AB85E0079C9BE /* icon_120.png */,
-				9BDF32F71F0AB85E0079C9BE /* ring.png */,
-				9B9F7A061EF3169C00CECEB4 /* high.png */,
-				9B9F7A071EF3169C00CECEB4 /* new.png */,
-				9B9F7A081EF3169C00CECEB4 /* play.png */,
-				9BDF33021F0AD1CF0079C9BE /* reset.png */,
-				9B9F7A091EF3169C00CECEB4 /* simone.png */,
-				9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */,
-				9B9F7A0A1EF3169C00CECEB4 /* bar.png */,
-				9B9F7A0B1EF3169C00CECEB4 /* b2.png */,
-				9B9F7A0C1EF3169C00CECEB4 /* b8.png */,
 			);
-			name = Images;
+			name = icons;
 			sourceTree = "<group>";
 		};
 		9BEF1F641EEF08430032793E = {
@@ -263,7 +268,6 @@
 				9B9F7A121EF3169C00CECEB4 /* b2.png in Resources */,
 				9BDF32F91F0AB85E0079C9BE /* ring.png in Resources */,
 				9B89C6B01F0C2B4000C4D39E /* 120.png in Resources */,
-				9BDF32F81F0AB85E0079C9BE /* icon_120.png in Resources */,
 				9B89C6B61F0C2B4000C4D39E /* 1024.png in Resources */,
 				9B9F7A111EF3169C00CECEB4 /* bar.png in Resources */,
 			);

@@ -32,29 +32,17 @@ class GameController: UIViewController {
         //------------
         arrOfGameColors = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
         simoneBrain = SimoneBrain(gameColors: arrOfGameColors)
+        simoneBrain.addRandomColorToArray()
+        
+        //------------Appelle la méthode "start game"
+        simoneBrain.startGame()
+        
+        //------------ Initialise "scoreKeeper"
+        scoreKeeper.text = simoneBrain.scoreKeeper
+        simoneBrain.loadArrayForComparison()
+        
         //------------
-//        addRandomButtonToArray()
-//        //------------Appelle la méthode "start game"
-//        simoneBrain.startGame(arrOfRandomButtons)
-//        //------------ Initialise "scoreKeeper"
-//        scoreKeeper.text = simoneBrain.scoreKeeper
-//        //------------
     }
-    //---------------------------------
-
-    
-//
-//    func addRandomButtonToArray (){
-//        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfGameColors.count-1)
-//        arrOfRandomButtons.append(arrOfGameColors[randomIndex])
-//        
-//     
-//    
-//    }
-
-    
-    
-    
     
     
      //---------------------------------
@@ -65,6 +53,18 @@ class GameController: UIViewController {
     //---------------------------------
     
     @IBAction func buttonManager(_ sender: UIButton) {
+        
+        if !simoneBrain.userTurnToPlay{
+            return
+        }
+        if simoneBrain.arrCopyOfRandomColorsToCompare.count == 0 {
+            simoneBrain.arrCopyOfRandomColorsToCompare = simoneBrain.arrRandomColors
+        }
+        if !simoneBrain.verification(arrOfGameColors[sender.tag]){
+            performSegue(withIdentifier: "wrong", sender: nil)
+        }
+        simoneBrain.scoreKeeperCounter! += 1
+        scoreKeeper.text = "\(simoneBrain.scoreKeeperCounter!)"
     
     
     }
