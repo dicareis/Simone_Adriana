@@ -24,25 +24,6 @@ class WrongController: UIViewController {
     
     
     
-    /*
-     
-     
-     
-     
-     
-     
-     
-     VIDEO 6 - 16:08h
-     
-     
-     
-     
-     
-     
-     */
-    
-    
-    
     
     
     

@@ -19,9 +19,20 @@ class SingletonShared{
     
     //---------------------------------
     init() {
-        saveDefaultIfNeeded()
+        //savedHighscore.removeObject(forKey: "score")
+        manageScore()
+      //   saveDefaultIfNeeded()
     }
     
+    //---------------------------------
+    func manageScore() {
+        if let hs = savedHighscore.object(forKey: "score"){
+            highscore = String (describing: hs)
+        } else {
+            savedHighscore.setValue("0", forKey: "score")
+        }
+    }
+ 
     //---------------------------------
     func saveDefaultIfNeeded() {
         if savedHighscore.object(forKey: "score") == nil{
@@ -30,12 +41,21 @@ class SingletonShared{
     }
     //---------------------------------
     func saveScore(_ aScore: String) {
-        let a = Int(aScore)
-        let b = savedHighscore.object(forKey: "score") as? String
-        let c = Int (b!)
-        if a! > c! {
+//        let a = Int(aScore)
+//        let b = savedHighscore.object(forKey: "score") as? String
+//        let c = Int (b!)
+//        if a! > c! {
+//            savedHighscore.setValue(aScore, forKey: "score")
+//        }
+        
+        let a = aScore
+        let b = highscore
+        if a > b! {
             savedHighscore.setValue(aScore, forKey: "score")
+            highscore = a
         }
+        
+        
     }
 
     

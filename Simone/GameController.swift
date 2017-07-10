@@ -62,11 +62,13 @@ class GameController: UIViewController {
         }
         if !simoneBrain.verification(arrOfGameColors[sender.tag]){
             
-            let theScore = simoneBrain.arrRandomColors.count - 1
-            let forWrongDisplay = "SCORE : \(theScore)"
-            SingletonShared.singletonSharedInstance.saveScore(String(theScore))
-            SingletonShared.singletonSharedInstance.scoreForWrongInterface = "\(forWrongDisplay)"
+           // let theScore = simoneBrain.arrRandomColors.count - 1
+           // let forWrongDisplay = "SCORE : \(theScore)"
+        //    SingletonShared.singletonSharedInstance.saveScore(String(theScore))
             
+             let forWrongDisplay = "SCORE : \(simoneBrain.arrRandomColors.count-1)"
+            SingletonShared.singletonSharedInstance.scoreForWrongInterface = "\(forWrongDisplay)"
+            SingletonShared.singletonSharedInstance.saveScore(String(simoneBrain.arrRandomColors.count-1))
             performSegue(withIdentifier: "wrong", sender: nil)
         }
         simoneBrain.scoreKeeperCounter! += 1
@@ -86,3 +88,20 @@ class GameController: UIViewController {
     
 }//fin class GameController
 //=============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

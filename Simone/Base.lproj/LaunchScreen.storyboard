@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,26 +24,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hgu-aT-1v1">
-                                <rect key="frame" x="85.5" y="72" width="205" height="89"/>
+                                <rect key="frame" x="75" y="103" width="225" height="99"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="ESJ-E7-mxb"/>
-                                    <constraint firstAttribute="width" constant="205" id="bPi-Nn-reT"/>
+                                    <constraint firstAttribute="width" secondItem="Hgu-aT-1v1" secondAttribute="height" multiplier="25:11" id="8cv-X2-LSu"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vf8-Nr-esC">
-                                <rect key="frame" x="147" y="161" width="80" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vf8-Nr-esC">
+                                <rect key="frame" x="140" y="206" width="94" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="DBE-1z-DkB"/>
-                                    <constraint firstAttribute="width" constant="80" id="GLI-Zn-h2u"/>
+                                    <constraint firstAttribute="width" secondItem="Vf8-Nr-esC" secondAttribute="height" multiplier="1:1" id="7g6-iF-SBU"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Hgu-aT-1v1" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="83" id="54z-Ys-LTz"/>
+                            <constraint firstItem="Vf8-Nr-esC" firstAttribute="top" secondItem="Hgu-aT-1v1" secondAttribute="bottom" constant="4" id="6T3-Vv-9vg"/>
                             <constraint firstItem="Hgu-aT-1v1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7ab-S8-BIl"/>
-                            <constraint firstItem="Vf8-Nr-esC" firstAttribute="top" secondItem="Hgu-aT-1v1" secondAttribute="bottom" id="HTr-12-vaj"/>
-                            <constraint firstItem="Hgu-aT-1v1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.35" id="dJK-xJ-rQU"/>
+                            <constraint firstItem="Hgu-aT-1v1" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.9" constant="-112.5" id="81I-wW-stc"/>
                             <constraint firstItem="Vf8-Nr-esC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eTT-RL-018"/>
+                            <constraint firstItem="Vf8-Nr-esC" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.9" constant="-243.5" id="yuy-dZ-p4U"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -52,7 +53,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="120.png" width="120" height="120"/>
+        <image name="1024.png" width="1024" height="1024"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
 </document>

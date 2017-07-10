@@ -97,20 +97,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B238A401F141A0200B08C1E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		9B238A411F141A3200B08C1E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9B238A401F141A0200B08C1E /* fonts */,
+				9BE8108E1F0EC0AB001A6156 /* icons */,
+				9BDF33041F0AE2DD0079C9BE /* Images */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		9BDF33041F0AE2DD0079C9BE /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9BE8108E1F0EC0AB001A6156 /* icons */,
 				9BDF32F71F0AB85E0079C9BE /* ring.png */,
+				9B9F7A0B1EF3169C00CECEB4 /* b2.png */,
+				9B9F7A0C1EF3169C00CECEB4 /* b8.png */,
+				9B9F7A0A1EF3169C00CECEB4 /* bar.png */,
 				9B9F7A061EF3169C00CECEB4 /* high.png */,
 				9B9F7A071EF3169C00CECEB4 /* new.png */,
 				9B9F7A081EF3169C00CECEB4 /* play.png */,
-				9BDF33021F0AD1CF0079C9BE /* reset.png */,
 				9B9F7A091EF3169C00CECEB4 /* simone.png */,
-				9B9F7A141EF316C100CECEB4 /* Beatles Light Light.ttf */,
-				9B9F7A0A1EF3169C00CECEB4 /* bar.png */,
-				9B9F7A0B1EF3169C00CECEB4 /* b2.png */,
-				9B9F7A0C1EF3169C00CECEB4 /* b8.png */,
+				9BDF33021F0AD1CF0079C9BE /* reset.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -158,7 +174,7 @@
 		9BEF1F6F1EEF08430032793E /* Simone */ = {
 			isa = PBXGroup;
 			children = (
-				9BDF33041F0AE2DD0079C9BE /* Images */,
+				9B238A411F141A3200B08C1E /* Support */,
 				9BEF1F821EEF087A0032793E /* Assets */,
 				9BEF1F721EEF08430032793E /* StartController.swift */,
 				9BDF33001F0AC3140079C9BE /* SingletonShared.swift */,

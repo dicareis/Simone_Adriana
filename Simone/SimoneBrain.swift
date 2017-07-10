@@ -1,17 +1,9 @@
-//  SimoneBrain.swift
-//  Simone
-//
-//  Created by eleves on 2017-07-03.
-//  Copyright © 2017 GrassetSucre. All rights reserved.
-//
-
 //=============================================
 import Foundation
 import UIKit
 //=============================================
 class SimoneBrain{
     //---------------------------------
-    
     var gameColors : [UIButton]!
     var colorIndex: Int!
     var arrRandomColors: [UIButton] = []
@@ -20,40 +12,31 @@ class SimoneBrain{
     var colorToHighlight: UIButton!
     var arrCopyOfRandomColorsToCompare: [UIButton]!
     var scoreKeeperCounter: Int!
-    
-    //---------------------------------Constructeur
+    //--------------Constructeur-------------
     init(gameColors: [UIButton]) {
         self.gameColors = gameColors
     }
-    
     //---------------------------------
-
     func getRandomNumber (from f: Int, to t: Int) -> Int {
-        
         //le UInt32 cast le Int en un entier de 32 bits
         let from = UInt32(f)
         let to = UInt32(t)
         let randomNumber = arc4random_uniform(to - from + 1) + from
         return Int (randomNumber)
     }
-    
     //---------------------------------
     func startGame (){
-        //------------
         colorIndex = 0
         //------------ Timer 1 seconde pour exécuter le methode "buttonAlphaManager"
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false){ _ in
             self.gameColorsToHighlightManager()
         }
-        //------------
-    
     }
-    
     //---------------------------------
     func gameColorsToHighlightManager(){
         
         if colorIndex < arrRandomColors.count{
-            //------------
+           
             userTurnToPlay = false
             scoreKeeper = ""
             colorToHighlight = arrRandomColors[colorIndex]
@@ -68,8 +51,6 @@ class SimoneBrain{
         } else {
             userTurnToPlay = true
         }
-        
-        
     }
     
     //---------------------------------
