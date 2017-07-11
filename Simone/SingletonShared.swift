@@ -12,26 +12,25 @@ import UIKit
 //=============================================
 class SingletonShared{
     //---------------------------------
-    var highscore : String!
+   // var highscore : String!
     var scoreForWrongInterface: String!
     var savedHighscore = UserDefaults.standard
     static let singletonSharedInstance = SingletonShared()
     
     //---------------------------------
     init() {
-        //savedHighscore.removeObject(forKey: "score")
-        manageScore()
-      //   saveDefaultIfNeeded()
+      //  manageScore()
+        saveDefaultIfNeeded()
     }
     
     //---------------------------------
-    func manageScore() {
-        if let hs = savedHighscore.object(forKey: "score"){
-            highscore = String (describing: hs)
-        } else {
-            savedHighscore.setValue("0", forKey: "score")
-        }
-    }
+//    func manageScore() {
+//        if let hs = savedHighscore.object(forKey: "score"){
+//            highscore = String (describing: hs)
+//        } else {
+//            savedHighscore.setValue("0", forKey: "score")
+//        }
+//    }
  
     //---------------------------------
     func saveDefaultIfNeeded() {
@@ -41,20 +40,12 @@ class SingletonShared{
     }
     //---------------------------------
     func saveScore(_ aScore: String) {
-//        let a = Int(aScore)
-//        let b = savedHighscore.object(forKey: "score") as? String
-//        let c = Int (b!)
-//        if a! > c! {
-//            savedHighscore.setValue(aScore, forKey: "score")
-//        }
-        
-        let a = aScore
-        let b = highscore
-        if a > b! {
+        let a = Int(aScore)
+        let b = savedHighscore.object(forKey: "score") as? String
+        let c = Int (b!)
+        if a! > c! {
             savedHighscore.setValue(aScore, forKey: "score")
-            highscore = a
         }
-        
         
     }
 
