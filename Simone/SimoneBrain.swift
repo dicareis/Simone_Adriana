@@ -13,9 +13,7 @@ class SimoneBrain{
     var arrCopyOfRandomColorsToCompare: [UIButton]!
     var scoreKeeperCounter: Int!
     var timerLabel : UILabel!
-    
     var aTimer: Timer!
-    
     
     //--------------Constructeur-------------
     init(gameColors: [UIButton], timerLabel: UILabel) {
@@ -120,17 +118,6 @@ class SimoneBrain{
     func loadArrayForComparison (){
         
         arrCopyOfRandomColorsToCompare = arrRandomColors
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
     }
     
