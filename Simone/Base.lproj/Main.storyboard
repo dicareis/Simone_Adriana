@@ -35,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="qT6-YZ-9AI">
-                                        <rect key="frame" x="100" y="13.5" width="174" height="76"/>
+                                        <rect key="frame" x="100" y="16" width="174" height="76"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="174" id="EIJ-fv-vTv"/>
                                             <constraint firstAttribute="height" constant="60" id="EcI-om-gVo"/>
@@ -67,7 +67,7 @@
                                         <variation key="heightClass=compact-widthClass=regular" constant="1"/>
                                     </constraint>
                                     <constraint firstItem="6np-J2-GaK" firstAttribute="width" secondItem="wTW-kS-OBZ" secondAttribute="width" id="G9n-D4-xRN"/>
-                                    <constraint firstItem="qT6-YZ-9AI" firstAttribute="centerY" secondItem="wTW-kS-OBZ" secondAttribute="centerY" multiplier="1.15" id="J7Z-hn-8T2">
+                                    <constraint firstItem="qT6-YZ-9AI" firstAttribute="centerY" secondItem="wTW-kS-OBZ" secondAttribute="centerY" multiplier="1.2" id="J7Z-hn-8T2">
                                         <variation key="heightClass=compact-widthClass=regular" constant="2.25"/>
                                     </constraint>
                                     <constraint firstItem="qT6-YZ-9AI" firstAttribute="centerX" secondItem="wTW-kS-OBZ" secondAttribute="centerX" id="Jz3-sK-mB9">
@@ -738,6 +738,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="438-X1-LW2"/>
-        <segue reference="UdO-s9-jJ7"/>
+        <segue reference="u4n-rd-WrL"/>
     </inferredMetricsTieBreakers>
 </document>
