@@ -23,14 +23,6 @@ class SingletonShared{
         saveDefaultIfNeeded()
     }
     
-    //---------------------------------
-//    func manageScore() {
-//        if let hs = savedHighscore.object(forKey: "score"){
-//            highscore = String (describing: hs)
-//        } else {
-//            savedHighscore.setValue("0", forKey: "score")
-//        }
-//    }
  
     //---------------------------------
     func saveDefaultIfNeeded() {
